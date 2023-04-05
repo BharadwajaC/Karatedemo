@@ -7,4 +7,4 @@ RUN git clone https://github.com/BharadwajaC/Karatedemo.git
 RUN chmod -R 777 Karatedemo
 WORKDIR /home/karate/Karatedemo
 RUN mvn -v
-RUN mvn clean --file *.pom
+RUN mvn clean -f *.pom
