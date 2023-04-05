@@ -13,7 +13,7 @@ pipeline {
             steps{
                 script{
                     sh 'docker run -i --name=mavenjdk11a maven/baseline:latest bash'
-                    sh 'sudo cd /home/karate/Karatedemo'
+                    sh 'cd /home/karate/Karatedemo'
                     sh 'mvn clean install'
                 }
             }
