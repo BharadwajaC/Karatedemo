@@ -12,7 +12,7 @@ pipeline {
         stage('Build maven'){
             steps{
                 script{
-                    sh 'docker exec -i --name=mavenjdk11a maven/baseline:latest bash'
+                    sh 'docker run -i --name=mavenjdk11a maven/baseline:latest bash'
                     sh 'mvn clean install'
                 }
             }
